@@ -319,12 +319,370 @@ img {
 }
 
 /*=============== ABOUT ===============*/
+.about {
+  background-color: var(--first-color);
+}
+
+.about__container {
+  row-gap: 9rem;
+  padding-bottom: 3rem;
+}
+
+.about__data {
+  text-align: center;
+}
+
+.about__data,
+.section__subtitle {
+  color: var(--white-color);
+}
+
+.about__description {
+  margin-bottom: 2rem;
+}
+
+.about__images {
+  position: relative;
+  justify-self: center;
+  margin-right: 2rem;
+}
+
+.about__img-1 {
+  width: 280px;
+  position: relative;
+  z-index: 10;
+  filter: var(--shadow-img);
+}
+
+.about__img-2 {
+  width: 210px;
+  position: absolute;
+  top: -6.5rem;
+  right: -2rem;
+  filter: var(--shadow-img);
+}
+
+.about__tooltip-1,
+.about__tooltip-2 {
+  position: absolute;
+  display: inline-block;
+  padding: 0.25rem 1.5rem;
+  border-radius: 0.75rem;
+  font-weight: var(--font-semi-bold);
+}
+
+.about__tooltip-1 {
+  background-color: var(--white-color);
+  top: -4rem;
+  left: 0rem;
+}
+
+.about__tooltip-2 {
+  background-color: var(--black-color);
+  color: var(--white-color);
+  right: -3rem;
+  bottom: 3rem;
+  z-index: 10;
+}
+
+.about__tooltip-1::after,
+.about__tooltip-2::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  rotate: 45deg;
+  border-radius: 0.25rem;
+  background-color: red;
+}
+
+.about__tooltip-1::after {
+  right: -8px;
+  background-color: var(--white-color);
+}
+
+.about__tooltip-2::after {
+  left: -8px;
+  background-color: var(--black-colorD);
+}
 
 /*=============== ORDER ===============*/
 
+.order .section__title span {
+  color: var(--first-color);
+}
+.order__container {
+  padding-block: 1.5rem 3rem;
+}
+
+.order__card {
+  position: relative;
+  display: grid;
+}
+
+.order__img-1 {
+  width: 190px;
+  filter: var(--shadow-img);
+}
+
+.order__img-2 {
+  width: 250px;
+  filter: var(--shadow-img);
+  justify-self: flex-end;
+}
+
+.order__shape-1,
+.order__shape-2 {
+  background-color: var(--first-color);
+  border-radius: 1rem;
+  align-items: center;
+  position: absolute;
+}
+
+.order__shape-1 {
+  width: 180px;
+  height: 100px;
+  left: -3rem;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+}
+
+.order__shape-2 {
+  width: 180px;
+  height: 140px;
+  right: -3rem;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+}
+
+.order__tooltip-1,
+.order__tooltip-2 {
+  position: absolute;
+  background-color: var(--first-color);
+  align-self: center;
+  padding: 0.75rem 2rem 0.75rem 0.75rem;
+  border-radius: 1.5rem;
+  z-index: 5;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  height: fit-content;
+}
+
+.order__tooltip-1 {
+  right: 0;
+}
+
+.order__tooltip-2 {
+  left: 0;
+}
+
+.order__tooltip-1::after,
+.order__tooltip-2::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  rotate: 45deg;
+  border-radius: 0.25rem;
+  background-color: var(--first-color);
+  z-index: -1;
+}
+.order__tooltip-1::after {
+  left: -8px;
+}
+
+.order__tooltip-2::after {
+  right: -8px;
+}
+
+.order__title {
+  color: var(--white-color);
+  font-size: var(--normal-font-size);
+}
+
+.order__subtitle {
+  display: inline-block;
+  font-size: var(--small-font-size);
+  margin-bottom: 1.25em;
+}
+
+.order__price {
+  font-size: var(--h2-font-size);
+}
+
+.order__button {
+  width: 32px;
+  height: 32px;
+  display: grid;
+  place-items: center;
+  font-size: 1.5rem;
+  border-radius: 0.5rem;
+  background-color: var(--black-color);
+  color: var(--first-color);
+  position: absolute;
+  right: 0.75rem;
+  bottom: 0.75rem;
+  cursor: pointer;
+}
 /*=============== COMBO ===============*/
 
+.combo {
+  background-color: var(--first-color);
+}
+
+.combo .section_title span {
+  color: var(--white-color);
+}
+.combo__container {
+  padding-block: 4rem 9rem;
+}
+.combo__content {
+  position: relative;
+  display: grid;
+}
+.combo__img {
+  width: 320px;
+  justify-self: center;
+  filter: var(--shadow-img);
+  z-index: 10;
+  position: relative;
+}
+
+.combo__numbers {
+  position: absolute;
+  top: -3rem;
+  justify-self: center;
+  display: flex;
+  column-gap: 4rem;
+}
+
+.combo__number {
+  display: grid;
+  row-gap: 0.25rem;
+  text-align: center;
+}
+
+.combo__number span {
+  font-size: var(--h3-font-size);
+  font-family: var(--second-font);
+}
+
+.combo__number i {
+  font-size: 1.25rem;
+}
+
+.combo__title {
+  font-size: var(--biggest-font-size);
+  color: var(--white-color);
+  line-height: 100%;
+  letter-spacing: 10px;
+  font-weight: var(--font-bold);
+}
+
+.combo__titles {
+  position: absolute;
+  top: 7rem;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.combo__data {
+  position: absolute;
+  bottom: -3.5rem;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 0.5rem;
+}
+
+.combo__info {
+  background-color: var(--white-color);
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  font-size: var(--small-font-size);
+}
+
+.combo__info b {
+  font-family: var(--second-font);
+}
+
+.combo__price {
+  background-color: var(--black-color);
+  color: var(--first-color);
+  padding: 1.25rem;
+  border-radius: 1rem;
+  font-size: var(--h1-font-size);
+  font-family: var(--second-font);
+}
+
 /*=============== CONTACT ===============*/
+.contact__container {
+  padding-block: 4rem 3rem;
+  row-gap: 3rem;
+  justify-content: center;
+}
+
+.contact__data {
+  position: relative;
+}
+
+.contact__title {
+  font-size: var(--bigger-font-size);
+}
+
+.contact__title span {
+  font-size: var(--biggest-font-size);
+  color: var(--first-color);
+}
+
+.contact__img-1,
+.contact__img-2 {
+  position: absolute;
+  filter: var(--shadow-img);
+}
+
+.contact__img-1 {
+  width: 110px;
+  top: 1.5rem;
+  right: 4rem;
+}
+
+.contact__img-2 {
+  width: 90px;
+  top: 3rem;
+  right: 2rem;
+}
+
+.contact__dam-1,
+.contact__dam-2,
+.contact__dam-3,
+.contact__dam-4 {
+  position: absolute;
+}
+
+.contact__dam-1 {
+  width: 60px;
+  top: -4rem;
+  right: 1rem;
+}
 
 /*=============== FOOTER ===============*/
 
