@@ -1,4 +1,4 @@
-![chicken](./img/readme-chi.png)
+![chicken](./img/readme.png)
 
 ## 🍗 Fried Chicken Website
 
